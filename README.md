@@ -7,7 +7,7 @@
 - 📫 Reach me on Linkedin [Husni Zuhdi](https://www.linkedin.com/in/husni-naufal-zuhdi/)
 
 <picture>
-  <img src="/github-metrics.svg" alt="Metrics">
+  <img align="center" src="/github-metrics.svg" alt="Metrics">
 </picture>
 
 <!--
