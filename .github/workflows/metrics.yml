@@ -39,8 +39,6 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
           plugin_lines: yes
-          plugin_reactions: yes
-          plugin_reactions_display: absolute
-          plugin_reactions_ignored: github-actions[bot], dependabot[bot], dependabot-preview[bot]
-          plugin_reactions_limit: 200
-          plugin_reactions_limit_issues: 100
+          plugin_topics: yes
+          plugin_topics_mode: icons
+          plugin_topics_sort: stars
