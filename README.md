@@ -6,6 +6,10 @@
 - ⚡ Certificated on [Associate Cloud Engineer](https://www.credential.net/c2cbc5cd-b8ca-41fc-8417-f618631078e1), Alibaba Cloud Associate Cloud Computing, and [AWS Developer Associate](https://www.credly.com/badges/a76fc573-ac7d-479a-a391-9b597b667850/public_url)
 - 📫 Reach me on Linkedin [Husni Zuhdi](https://www.linkedin.com/in/husni-naufal-zuhdi/)
 
+<picture>
+  <img src="/github-metrics.svg" alt="Metrics">
+</picture>
+
 <!--
 Here are some ideas to get you started:
 
