@@ -7,7 +7,6 @@ local plugins = {
         "css-lsp",
         "docker-compose-language-service",
         "dockerfile-language-server",
-        "go-debug-adapter",
         "gopls",
         "helm-ls",
         "html-lsp",
