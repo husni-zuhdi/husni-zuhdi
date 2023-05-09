@@ -12,7 +12,7 @@ local plugins = {
         "html-lsp",
         "marksman",
         "pyright",
-        "shellcheck",
+        "bash-language-server",
         "terraform-ls",
         "rust-analyzer",
         "yaml-language-server",
