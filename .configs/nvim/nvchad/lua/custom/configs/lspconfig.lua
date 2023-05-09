@@ -8,10 +8,14 @@ lspconfig.tsserver.setup {}
 lspconfig.gopls.setup {}
 lspconfig.tsserver.setup{}
 lspconfig.terraformls.setup{}
+lspconfig.terraform_lsp.setup{
+    filetypes = {"hcl"},
+}
 lspconfig.ansiblels.setup {}
 lspconfig.bashls.setup {}
 lspconfig.docker_compose_language_service.setup{}
 lspconfig.dockerls.setup{}
+lspconfig.marksman.setup{}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -50,3 +54,23 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end, opts)
   end,
 })
+
+-- Terraform LS configs
+vim.api.nvim_create_autocmd('BufWritePre', {
+  pattern = {'*.tf', '*.tfvars'},
+  callback = function ()
+    vim.lsp.buf.format()
+  end,
+})
+
+-- Bash LS configs
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'sh',
+  callback = function()
+    vim.lsp.start({
+      name = 'bash-language-server',
+      cmd = { 'bash-language-server', 'start' },
+    })
+  end,
+})
+

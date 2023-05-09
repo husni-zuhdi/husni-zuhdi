@@ -12,7 +12,7 @@ local plugins = {
         "html-lsp",
         "marksman",
         "pyright",
-        "shellcheck",
+        "bash-language-server",
         "terraform-ls",
         "rust-analyzer",
         "yaml-language-server",
@@ -64,6 +64,39 @@ local plugins = {
       table.insert(M.sources, {name = "crates"})
       return M
     end,
+  },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+        ensure_installed = {
+            -- defaults
+            "vim",
+            "lua",
+
+            -- web dev 
+            "html",
+            "css",
+            "javascript",
+            "typescript",
+            "tsx",
+            "json",
+
+            -- high-level
+            "go",
+            "python",
+
+            -- low-level
+            "rust",
+
+            -- tools
+            "bash",
+            "terraform",
+            "hcl",
+            "dockerfile",
+            "markdown",
+            "yaml",
+        },
+    },
   },
 }
 return plugins
