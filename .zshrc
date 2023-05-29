@@ -8,7 +8,7 @@ alias kd="kubectl describe"
 alias kl="kubectl logs"
 alias ke="kubectl events"
 alias kssh="kubectl exec -it"
-alias kgcx="kubectl config get-contexts"
+alias kgcx="kubectl config get-contexts -o name"
 alias kucx="kubectl config use-context"
 alias kdcx="kubectl config delete-context"
 
