@@ -1,13 +1,16 @@
 # Append this lines to your own .zshrc
-
 # kubectl aliases
 export KONF="$HOME/.kube"
 alias k="kubectl"
 alias kg="kubectl get"
 alias kd="kubectl describe"
 alias kl="kubectl logs"
-alias ke="kubectl events"
+alias kev="kubectl events"
+alias kedit="kubectl edit"
 alias kssh="kubectl exec -it"
+alias kgall="kubectl get -A"
+alias kgp="kubectl get pod"
+alias kgpa="kubectl get pod -A"
 alias kgcx="kubectl config get-contexts -o name"
 alias kucx="kubectl config use-context"
 alias kdcx="kubectl config delete-context"
@@ -46,3 +49,13 @@ alias gitcp="git checkout master && git pull"
 
 # aws cli pager
 export AWS_PAGER=""
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# goenv
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+
