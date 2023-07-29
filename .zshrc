@@ -1,4 +1,7 @@
 # Append this lines to your own .zshrc
+# neovim
+export PATH="$HOME/bin:$PATH"
+
 # kubectl aliases
 export KONF="$HOME/.kube"
 alias k="kubectl"
@@ -59,3 +62,6 @@ eval "$(pyenv init -)"
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 
+# tfenv and tgenv
+export PATH="$HOME/.tfenv/bin:$PATH"
+export PATH="$HOME/.tgenv/bin:$PATH"
