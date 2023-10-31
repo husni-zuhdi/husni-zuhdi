@@ -17,6 +17,7 @@ local plugins = {
         "rust-analyzer",
         "yaml-language-server",
         "typescript-language-server",
+        "textlab",
       },
     },
   },
