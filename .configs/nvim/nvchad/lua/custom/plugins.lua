@@ -16,7 +16,7 @@ local plugins = {
         "terraform-ls",
         "rust-analyzer",
         "yaml-language-server",
-
+        "typescript-language-server",
       },
     },
   },
