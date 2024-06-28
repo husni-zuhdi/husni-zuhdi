@@ -13,8 +13,8 @@
 - ⚡ Certificated on :
   - [✅🌈👨‍💻 GCP Associate Cloud Engineer](https://www.credential.net/c2cbc5cd-b8ca-41fc-8417-f618631078e1)
   - [✅🍊👨‍💻 AWS Developer Associate](https://www.credly.com/badges/a76fc573-ac7d-479a-a391-9b597b667850/public_url)
+  - [✅☸️👷‍♂️ K8S Certified Kubernetes Administrator](https://www.credly.com/badges/a7ef8fab-b735-4c73-9fe2-39e14e2a458d/public_url)
   - ❔🍊👷‍♂️ AWS Solution Architect Associate
-  - ❔☸️👷‍♂️ K8S Certified Kubernetes Administrator
   - ❔☸️👨‍💻 K8S Certified Kubernetes Application Developer
 - 📫 Reach me on LinkedIn [Husni Zuhdi](https://www.linkedin.com/in/husni-naufal-zuhdi/)
 
