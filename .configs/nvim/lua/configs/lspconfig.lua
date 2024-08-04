@@ -7,7 +7,6 @@ local lspconfig = require "lspconfig"
 local servers = {
     "pyright",
     "gopls",
-    "terraformls",
     "ansiblels",
     "bashls",
     "docker_compose_language_service",
@@ -25,12 +24,13 @@ for _, lsp in ipairs(servers) do
   }
 end
 
--- terraform_lsp
-lspconfig.terraform_lsp.setup{
+
+-- terraform_ls
+lspconfig.terraformls.setup{
   on_attach = on_attach,
   on_init = on_init,
   capabilities = capabilities,
-  filetypes = {"hcl"},
+  filetypes = {"terraform", "terraform-vars", "hcl"},
 }
 
 -- tailwindcss
