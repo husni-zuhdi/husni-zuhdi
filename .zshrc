@@ -65,3 +65,8 @@ export PATH="$GOENV_ROOT/bin:$PATH"
 # tfenv and tgenv
 export PATH="$HOME/.tfenv/bin:$PATH"
 export PATH="$HOME/.tgenv/bin:$PATH"
+
+# OpenMP Root for MacOS
+# Make sure you have libomp installed via homebrew
+# > brew install libomp
+# export OpenMP_ROOT=$(brew --prefix)/opt/libomp
