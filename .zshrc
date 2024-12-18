@@ -70,3 +70,9 @@ export PATH="$HOME/.tgenv/bin:$PATH"
 # Make sure you have libomp installed via homebrew
 # > brew install libomp
 # export OpenMP_ROOT=$(brew --prefix)/opt/libomp
+
+# Android Home environment variables
+export PATH=$PATH:$HOME/android-studio/bin
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
