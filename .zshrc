@@ -102,7 +102,12 @@ export GIT_EDITOR="nvim"
 # Terragrunt cache
 export TF_PLUGIN_CACHE_DIR="$HOME/.terra-cache"
 
-# Android Studio Home envar
+# OpenMP Root for MacOS
+# Make sure you have libomp installed via homebrew
+# > brew install libomp
+# export OpenMP_ROOT=$(brew --prefix)/opt/libomp
+
+# Android Home environment variables
 export PATH=$PATH:$HOME/android-studio/bin
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator

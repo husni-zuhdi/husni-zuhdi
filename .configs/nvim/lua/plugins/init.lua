@@ -40,6 +40,7 @@ return {
         "rust-analyzer",
         "yaml-language-server",
         "typescript-language-server",
+        "tailwindcss-language-server",
         "textlab",
         },
   	},
