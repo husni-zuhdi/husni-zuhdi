@@ -95,19 +95,10 @@ return {
   },
 
   {
-    "simrat39/rust-tools.nvim",
+    'mrcjkb/rustaceanvim',
     ft = "rust",
-    dependencies = "neovim/nvim-lspconfig",
-    config = function ()
-      require('rust-tools').setup(
-                {
-                    server = {
-                        on_attach = on_attach,
-                        cappabilities = cappabilities,
-                    }
-                }
-            )
-    end
+    version = '^6', -- Recommended
+    lazy = false, -- This plugin is already lazy
   },
 
   {
