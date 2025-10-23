@@ -1,6 +1,3 @@
-local on_attach = require("configs.lspconfig").on_attach
-local cappabilities = require("configs.lspconfig").capabilities
-
 return {
   {
     "stevearc/conform.nvim",
@@ -14,7 +11,6 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      require("nvchad.configs.lspconfig").defaults()
       require "configs.lspconfig"
     end,
   },
