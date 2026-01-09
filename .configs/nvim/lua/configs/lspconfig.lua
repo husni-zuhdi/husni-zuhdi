@@ -5,7 +5,8 @@ local capabilities = require("nvchad.configs.lspconfig").capabilities
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local servers = {
-  pyright = {},
+  basedpyright = {},
+  ruff = {},
   gopls = {},
   ansiblels = {},
   bashls = {},
