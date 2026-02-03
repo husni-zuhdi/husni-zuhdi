@@ -118,6 +118,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# Neovim Mason LSP binaries
+export PATH="$PATH:$HOME/.local/share/nvim/mason/bin"
+
+# OpenJDK with brew
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
 # SDKMAN envars
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
