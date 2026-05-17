@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     config = function()
       require "configs.conform"
     end,
@@ -16,12 +16,12 @@ return {
   },
 
   {
-  	"williamboman/mason.nvim",
-  	opts = {
-  		ensure_installed = {
-  		"lua-language-server",
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "lua-language-server",
         "stylua",
-  		"html-lsp",
+        "html-lsp",
         "css-lsp",
         "prettier",
         "ansible-language-server",
@@ -39,20 +39,20 @@ return {
         "typescript-language-server",
         "tailwindcss-language-server",
         "textlab",
-        },
-  	},
+      },
+    },
   },
 
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
         -- defaults
         "vim",
         "lua",
         "vimdoc",
 
-        -- web dev 
+        -- web dev
         "html",
         "css",
         "javascript",
@@ -74,8 +74,8 @@ return {
         "dockerfile",
         "markdown",
         "yaml",
-  		},
-  	},
+      },
+    },
   },
 
   {
@@ -86,15 +86,15 @@ return {
   {
     "rust-lang/rust.vim",
     ft = "rust",
-    init = function ()
+    init = function()
       vim.g.rustfmt_autosave = 1
-    end
+    end,
   },
 
   {
-    'mrcjkb/rustaceanvim',
+    "mrcjkb/rustaceanvim",
     ft = "rust",
-    version = '^6', -- Recommended
+    version = "^6", -- Recommended
     lazy = false, -- This plugin is already lazy
   },
 
@@ -104,20 +104,30 @@ return {
 
   {
     "saecki/crates.nvim",
-    ft = {"rust", "toml"},
+    ft = { "rust", "toml" },
     config = function(_, opts)
-      local crates = require("crates")
+      local crates = require "crates"
       crates.setup(opts)
       crates.show()
-    end
+    end,
   },
 
   {
     "hrsh7th/nvim-cmp",
-    opts = function ()
+    opts = function()
       local M = require "nvchad.configs.cmp"
-      table.insert(M.sources, {name = "crates"})
+      table.insert(M.sources, { name = "crates" })
       return M
     end,
+  },
+  { "nvim-mini/mini.nvim", version = "*" },
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-mini/mini.nvim" }, -- if you use the mini.nvim suite
+    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.icons' },        -- if you use standalone mini plugins
+    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+    ---@module 'render-markdown'
+    ---@type render.md.UserConfig
+    opts = {},
   },
 }
