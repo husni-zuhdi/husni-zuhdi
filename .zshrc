@@ -89,7 +89,8 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/kustomize:$PATH"
 
 # Custom function
-alias done="echo '✅ Task Finished'"
+# WARNING! Conflict with `done` keyword in bash
+# alias done="echo '✅ Task Finished'"
 
 # Git Config
 export GIT_EDITOR="nvim"
