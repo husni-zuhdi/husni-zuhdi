@@ -22,9 +22,20 @@ local servers = {
   dockerls = {},
   marksman = {},
   ts_ls = {},
-  html = {
-    filetypes = { "html", "templ", "htmldjango" },
+  efm = {
+    filetypes = { "htmldjango", "jinja" },
+    init_options = { documentFormatting = true },
+    settings = {
+      rootMarkers = { ".git/" },
+      languages = {
+        htmldjango = { "djlint" },
+        jinja = { "djLint" },
+      },
+    },
   },
+  -- html = {
+  --   filetypes = { "html", "templ", "htmldjango" },
+  -- },
   cssls = {
     filetypes = { "html", "templ", "htmldjango", "css", "scss", "less" },
   },

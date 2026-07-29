@@ -37,6 +37,8 @@ return {
         "typescript-language-server",
         "tailwindcss-language-server",
         "textlab",
+        "djlint",
+        "efm"
       },
     },
   },

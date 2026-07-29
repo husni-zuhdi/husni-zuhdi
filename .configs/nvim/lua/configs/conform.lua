@@ -6,6 +6,15 @@ local options = {
     -- javascript = { "prettier" },
     -- typescript = { "prettier" },
     rust = { "rustfmt" },
+    htmldjango = { "djlint" },
+    jinja = { "djlint" },
+  },
+  formatters = {
+    djlint = {
+      command = "djlint",
+      args = { "--reformat", "--quiet", "-" },
+      stdin = true,
+    },
   },
 
   format_on_save = {
